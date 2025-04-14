@@ -24,6 +24,16 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Enter a city" />
+            
+            <Label
+                x:Name="WeatherLabel"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+            
+            <Label
+                x:Name="TemperatureLabel"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
 
             <Entry 
                 x:Name="SearchEntry"
@@ -39,6 +49,8 @@
                 SemanticProperties.Hint="Click to find temp of a city"
                 Clicked="OnButtonClicked"
                 HorizontalOptions="Fill" />
+
+            <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" />
         </VerticalStackLayout>
     </ScrollView>
 
